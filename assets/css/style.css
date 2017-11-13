@@ -1,0 +1,144 @@
+/*TWITTER!!*/
+*{
+	margin: 0 auto;
+	font-family: 'Inconsolata', monospace;
+}
+
+body{
+	background-image: url(../img/bici1.jpg);
+	background-repeat: no-repeat;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    background-color: #5AC8F0;
+    color: #fff;
+}
+
+header h1{
+	text-align: center;
+	padding-top: 10px;
+	color: white;
+}
+
+.cuerpo{
+	width: 100%;
+	height: 675px;
+}
+
+/*caja izquierda*/
+div.caja1{
+	background-color: white;
+	width: 500px;
+ 	height: 250px;
+ 	float: left;
+ 	display: inline-block;
+	margin-top: 15px;
+ 	margin-left: 100px;
+	border-radius: 3px;
+}
+
+.caja1 p{
+	padding: 20px;
+	font-size: 15px;
+}
+
+.caja1 h2{
+	margin-top: 40px;
+	margin-left: 20px;
+}
+
+hr{
+    margin: 8px;
+    background-color: #eee;
+    border: none;
+    color: gray;
+    height: 2px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding-left: 20px;
+    padding-top: 10px;
+    color: #6CA1AE;
+}
+
+
+/*caja derecha*/
+div.caja2{
+	background-color: white;
+	width: 530px;
+	height: 250px;
+	float: left;
+	display: inline-block;
+	margin-top: 15px;
+	margin-left: 60px;
+	border-radius: 3px;
+	margin-bottom: 30px;
+}
+
+/*botón 'tweet'*/
+#btn{
+	background-color: #66AEC7;
+	border: 0px;
+	cursor: pointer;
+	margin-top: 10px auto;
+	margin-left: 10px;
+	width: 130px;
+	height: 30px;
+	display: block;
+	color: #FFF;
+	font-size: 13px;
+}
+
+#btn:hover {
+	background-color: #5590A6;
+}
+
+/*contador*/
+span#counter {
+    float: right;
+    text-align: right;
+    padding: 20px;
+    color: black;
+}
+
+/*formulario   --->*/
+form {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#txtarea{
+	width: 90%;
+	margin-top: 15px;
+	font-size: 15px;
+    border: none;
+    resize: none;
+    color: gray;
+}
+
+/*posteos*/
+#cont {
+	width: 85%;
+	/*ancho caja post*/
+	color: #000;
+	display: inline-block;
+	margin: 0 auto;
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+
+p {
+    text-align: left;
+    display: block;
+    /*comentarios vert/hor*/
+    padding: 10px;
+    /*padding del texto (agranda la caja)*/
+    background-color: #FFF;
+	border-radius: 3px;
+}
+

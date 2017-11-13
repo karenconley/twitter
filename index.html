@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Twitter</title>
+	<link rel="stylesheet" href="../twitter/assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<h1>Twitter</h1>
+	</header>
+
+	<!-- caja izquierda -->
+	<div class="caja1">
+		<h2>Reto de código</h2>
+		<p>Hola,<br>soy front-end developer jr.</p>
+		<hr>
+		<a href="https://github.com/karenconley/twitter">CÓDIGO</a>
+	</div>
+
+	<!-- caja derecha -->
+	<div class="caja2">
+		<form action="#" method="post">
+			<textarea class="txt" id="txtarea" placeholder="¿Qué está pasando?"></textarea>
+			<hr id="division">
+			<!-- botón -->
+			<button type="button" id="btn" onclick="add()">Tweet</button>
+			<span id="chrtsnumber">140</span>
+		</form>
+	</div>	
+	
+	<!-- contenedor vacío (comentarios) -->
+	<div id="cont"></div>
+		
+	<script type="text/javascript" src="assets/js/app.js"></script>
+
+</body>
+</html>
