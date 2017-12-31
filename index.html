@@ -22,12 +22,13 @@
 
 	<!-- caja derecha -->
 	<div class="caja2">
-		<form action="#" method="post">
-			<textarea class="txt" id="txtarea" placeholder="¿Qué está pasando?"></textarea>
+		<form id="post" action="#" method="post">
+			<textarea name="textarea" class="txt" id="txtarea" cols="50" rows="1" placeholder="¿Qué está pasando?"></textarea>
 			<hr id="division">
 			<!-- botón -->
-			<button type="button" id="btn" onclick="add()">Tweet</button>
-			<span id="chrtsnumber">140</span>
+			<button type="button" id="btn">Tweet</button>
+			<!-- contador -->
+			<p id="chrtsnumber">140</p>
 		</form>
 	</div>	
 	
