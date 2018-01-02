@@ -10,7 +10,6 @@ btn.addEventListener("click", function(){
 	var post = document.getElementById('cont');
 	//se crea un div que contenga los comentarios:
 	var newComments = document.createElement('posteos');
-
 	//nodo de texto:
 	var pText = document.createTextNode(comments);
 	//se crea un elemento 'p':
@@ -24,33 +23,33 @@ btn.addEventListener("click", function(){
 
 
 
-	//AGREGAR LA HORA EN QUE SE PUBLICÓ EL TWEET
+//AGREGAR LA HORA EN QUE SE PUBLICÓ EL TWEET
 
-	var hora = new Date();
-	var hr = hora.hour();
-	var min = minutes();
-	// agregamos un 0 a los minutos cuando es entre 00 y 09 mins
-	function minutes(){
-		min = hora.cero();
-		if(min < 10) {
-			return '0' + min;
-		} else {
-			return min;
+var hora = new Date();
+var hr = hora.getHours();
+var min = minutes();
+// agregamos un 0 a los minutos cuando es entre 00 y 09 mins
+function minutes(){
+	min = hora.getUTCMinutes();
+	if(min < 10) {
+	return '0' + min;
+	} else {
+		return min;
 		}
 	}
-	//crear nodo con formato de hora (xx:xx):
-	var formatoHora = document.createTextNode(hr + ":" + min);
-	//variable que contenga la hora en un 'p':
-	var horap = document.createElement("p");
-	//agregamos "hora: " a la hora:
-	horap.innerText = "hora: ";
-	//vinculamos 'p' con la hora:
-	horap.appendChild(formatoHora);
-	//se agrega la hora al nuevo div contenedor:
-	newComments.appendChild(horap);
-	//el contador vuelve a "140":
-	document.getElementById("chrtsnumber").innerHTML = "140";
-},false);
+//crear nodo con formato de hora (formato xx:xx):
+var formatoHora = document.createTextNode(hr + ":" + min);
+//variable que contenga la hora en un 'p':
+var horap = document.createElement("p");
+//anteponemos "hora: ":
+horap.innerText = "hora: ";
+//vinculamos 'p' con la hora:
+horap.appendChild(formatoHora);
+//se agrega la hora al nuevo div contenedor:
+newComments.appendChild(horap);
+//el contador vuelve a "140":
+document.getElementById("chrtsnumber").innerHTML = "140";
+}, false);
 
 
 
@@ -84,6 +83,5 @@ txtarea.onkeydown = function(){
 	contador.classList.add('danger');
 	}
 	else{
-
 	};
 };
